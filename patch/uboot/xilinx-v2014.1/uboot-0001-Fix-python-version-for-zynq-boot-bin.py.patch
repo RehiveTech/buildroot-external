@@ -1,0 +1,24 @@
+From 450074c41d588553fc3c6c8cebea0a5660bddc7f Mon Sep 17 00:00:00 2001
+From: jviki <jan.viktorin@gmail.com>
+Date: Thu, 10 Jul 2014 14:19:43 +0200
+Subject: [PATCH] Fix python version for zynq-boot-bin.py
+
+The code does not work when Python 3 is default.
+Enforce using Python 2.
+---
+ tools/zynq-boot-bin.py | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/tools/zynq-boot-bin.py b/tools/zynq-boot-bin.py
+index e35379b..54a0fca 100755
+--- a/tools/zynq-boot-bin.py
++++ b/tools/zynq-boot-bin.py
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/env python2
+ # -*- coding: utf-8 -*-
+ # Copyright (C) 2014, Xilinx.inc.
+ #
+-- 
+2.1.0
+
