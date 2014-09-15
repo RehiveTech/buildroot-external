@@ -1,0 +1,7 @@
+config BR2_PACKAGE_BUSIO
+	bool "busio"
+	select BR2_PACKAGE_LIBDTREE
+	help
+	  Utility to access the hardware components by using the libdtree.
+
+	  https://github.com/jviki/dtree

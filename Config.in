@@ -1,0 +1,2 @@
+source "$BR2_EXTERNAL/package/busio/Config.in"
+source "$BR2_EXTERNAL/package/libdtree/Config.in"
