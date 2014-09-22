@@ -1,0 +1,16 @@
+mmc rescan;
+
+if fatload mmc 0:1 $fpgadata soc_system.rbf; then
+	fpga load 0 $fpgadata $filesize;
+fi;
+
+run bridge_enable_handoff;
+
+fatload mmc 0:1 0x1000000 uImage;
+fatload mmc 0:1 0x2000000 rootfs.cpio.uboot;
+fatload mmc 0:1 0x0A00000 socfpga.dtb;
+
+setenv bootargs console=ttyS0,115200 root=/dev/ram rw earlyprintk rootwait;
+setenv initrd_high 0x01ffffff
+
+bootm 0x1000000 0x2000000 0x0A00000;
