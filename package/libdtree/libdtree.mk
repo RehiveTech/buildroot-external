@@ -4,7 +4,7 @@
 #
 #############################################################
 
-LIBDTREE_VERSION = v2.0
+LIBDTREE_VERSION = v2.1
 LIBDTREE_SITE = git://github.com/jviki/dtree.git
 LIBDTREE_INSTALL_STAGING = YES
 LIBDTREE_INSTALL_TARGET = YES

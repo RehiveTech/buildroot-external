@@ -4,7 +4,7 @@
 #
 #############################################################
 
-BUSIO_VERSION = 2.0
+BUSIO_VERSION = 2.1
 BUSIO_SOURCE =
 BUSIO_DEPENDENCIES = libdtree
 BUSIO_INSTALL_TARGET = YES
